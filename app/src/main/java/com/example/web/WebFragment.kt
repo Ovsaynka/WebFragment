@@ -31,7 +31,7 @@ class WebFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         webView = view.findViewById(R.id.webViewFrag)
         progressBar = view.findViewById(R.id.progressBar)
-        webUrl = arguments?.getString("pageUrl")
+        webUrl = arguments?.getString("url")
        // requireActivity().supportFragmentManager.popBackStack()
 
         initWebView()
